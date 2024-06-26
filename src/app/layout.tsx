@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Merriweather } from "next/font/google";
 import StyledComponentsRegistry from './lib/registry'
-import { GlobalStyle } from './styles/globals'
+import { GlobalStyle } from './globals'
+import MainHeader from "./components/MainHeader";
 
 const merriweather = Merriweather({ subsets: ["latin"], weight: "400"})
 
@@ -16,15 +17,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
+    <StyledComponentsRegistry>
       <GlobalStyle />
       <html lang="en">
         <body className={merriweather.className}>
-          <StyledComponentsRegistry>
+          <div id="page">
+            <MainHeader />
             {children}
-          </StyledComponentsRegistry>
+          </div>
         </body>
       </html>
-    </>
+    </StyledComponentsRegistry>
   );
 }
