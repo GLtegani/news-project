@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { Header, Logo } from "./styles";
 
 export default function MainHeader() {
   return (
-    <header id='main-header'>
-      <div id='logo'>
+    <Header>
+      <Logo>
         <Link href='/'>NextNews</Link>
-      </div>
+      </Logo>
       <nav>
         <ul>
           <li>
@@ -13,6 +14,6 @@ export default function MainHeader() {
           </li>
         </ul>
       </nav>
-    </header>
+    </Header>
   );
 }

@@ -1,7 +1,9 @@
+import { HomeContainer } from "./pageStyle";
+
 export default function Home() {
   return (
-    <div id='home'>
+    <HomeContainer>
       <h1>Home</h1>
-    </div>
+    </HomeContainer>
   );
 }

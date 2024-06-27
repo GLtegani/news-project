@@ -3,6 +3,7 @@ import { Merriweather } from "next/font/google";
 import StyledComponentsRegistry from "./lib/registry";
 import { GlobalStyle } from "./globals";
 import MainHeader from "./components/MainHeader";
+import { PageContainer } from "./layoutStyle";
 
 const merriweather = Merriweather({ subsets: ["latin"], weight: "400" });
 
@@ -21,10 +22,10 @@ export default function RootLayout({
       <GlobalStyle />
       <html lang='en'>
         <body className={merriweather.className}>
-          <div id='page'>
+          <PageContainer>
             <MainHeader />
             {children}
-          </div>
+          </PageContainer>
         </body>
       </html>
     </StyledComponentsRegistry>

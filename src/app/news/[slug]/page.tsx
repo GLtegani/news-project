@@ -1,5 +1,6 @@
-import Image from "next/image";
+import { notFound } from "next/navigation";
 import { DUMMY_NEWS } from "../../../../dummy-news";
+import { NewsArticle, NewsImage } from "./pageStyle";
 
 interface NewsSlugProps {
   params: {
@@ -10,21 +11,22 @@ interface NewsSlugProps {
 export default function NewsSlug({ params }: NewsSlugProps) {
   const newsItem = DUMMY_NEWS.find((newsItem) => newsItem.slug === params.slug);
   if (!newsItem) {
-    return <h1>Sorry, not found!</h1>;
+    notFound();
   } else {
     return (
-      <article>
+      <NewsArticle>
         <header>
-          <Image
+          <NewsImage
             src={`/images/news/${newsItem.image}`}
             alt={newsItem.title}
-            width={60}
-            height={60}
+            width={100}
+            height={100}
           />
           <h1>{newsItem.title}</h1>
           <time dateTime={newsItem.date}>{newsItem.date}</time>
         </header>
-      </article>
+        <p>{newsItem.content}</p>
+      </NewsArticle>
     );
   }
 }
