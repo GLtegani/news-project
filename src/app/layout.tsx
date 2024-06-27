@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Merriweather } from "next/font/google";
-import StyledComponentsRegistry from './lib/registry'
-import { GlobalStyle } from './globals'
+import StyledComponentsRegistry from "./lib/registry";
+import { GlobalStyle } from "./globals";
 import MainHeader from "./components/MainHeader";
 
-const merriweather = Merriweather({ subsets: ["latin"], weight: "400"})
+const merriweather = Merriweather({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Next.js Page Routing & Rendering",
@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <StyledComponentsRegistry>
       <GlobalStyle />
-      <html lang="en">
+      <html lang='en'>
         <body className={merriweather.className}>
-          <div id="page">
+          <div id='page'>
             <MainHeader />
             {children}
           </div>

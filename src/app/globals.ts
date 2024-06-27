@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { createGlobalStyle } from "styled-components";
 
@@ -195,4 +195,4 @@ export const GlobalStyle = createGlobalStyle`
       margin-top: 3rem;
    }
 
-`
+`;
