@@ -1,10 +1,10 @@
-import { NotFoundContainer } from "@/app/globals";
+import { ErrorContainer } from "@/app/globals";
 
 export default function NewsNotFoundPage() {
   return (
-    <NotFoundContainer>
+    <ErrorContainer>
       <h1>Not Found!</h1>
       <p>Unfortunately, we could not find the requested article.</p>
-    </NotFoundContainer>
+    </ErrorContainer>
   );
 }

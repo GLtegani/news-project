@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import styled from "styled-components";
 
 export const Header = styled.header`
@@ -12,20 +13,27 @@ export const Header = styled.header`
     display: flex;
     gap: 2rem;
     font-weight: bold;
-
-    a {
-      text-decoration: none;
-      color: #e5e5e1;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-
-      &:hover,
-      &:active {
-        background-color: #bcbcb7;
-        color: #181817;
-      }
-    }
   }
+`;
+
+export const StandardLink = styled(Link)`
+  text-decoration: none;
+  color: #e5e5e1;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #bcbcb7;
+    color: #181817;
+  }
+`;
+
+export const ActiveLink = styled(Link)`
+  text-decoration: none;
+  background-color: #bcbcb7;
+  color: #181817;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 `;
 
 export const Logo = styled.div`

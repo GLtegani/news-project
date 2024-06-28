@@ -3,7 +3,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 
-export const NewsList = styled.ul`
+export const NewsItemsList = styled.ul`
   display: grid;
   margin-top: 1rem;
   gap: 1rem;

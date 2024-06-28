@@ -48,35 +48,9 @@ export const GlobalStyle = createGlobalStyle`
    .modal h1 {
       margin: 0;
    }
-
-   #archive-header ul {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 2rem;
-   }
-
-   #archive-header ul a {
-      text-decoration: none;
-      color: #b0b0a6;
-      border-radius: 4px;
-      font-weight: bold;
-      font-size: 1.25rem;
-   }
-
-   #archive-header ul a:hover,
-   #archive-header ul a.active {
-      color: #e5e5e1;
-   }
-
-   #archive-filter {
-      margin-bottom: 2rem;
-      padding-bottom: 2rem;
-      border-bottom: 2px solid #b0b0a6;
-   }
-
 `;
 
-export const NotFoundContainer = styled.div`
+export const ErrorContainer = styled.div`
   text-align: center;
   margin-top: 3rem;
 `;

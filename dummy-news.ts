@@ -1,4 +1,4 @@
-interface DummyNewsProps {
+export interface DummyNewsProps {
   id: string;
   slug: string;
   title: string;
