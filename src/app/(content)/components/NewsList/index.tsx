@@ -17,6 +17,7 @@ export default function NewsList({ news }: NewsListProps) {
               alt={newsItem.title}
               width={300}
               height={300}
+              priority
             />
             <span>{newsItem.title}</span>
           </Link>

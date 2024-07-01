@@ -8,7 +8,6 @@ export const HomeContainer = styled.div`
   text-align: center;
 
   img {
-    width: 8rem;
     border-radius: 50%;
     box-shadow: 0 0 10px 0 #181817;
   }

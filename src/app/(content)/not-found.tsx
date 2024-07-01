@@ -1,4 +1,4 @@
-import { ErrorContainer } from "./globals";
+import { ErrorContainer } from "../globals";
 
 export default function NotFoundPage() {
   return (

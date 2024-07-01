@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { DUMMY_NEWS } from "../../../../dummy-news";
+import { DUMMY_NEWS } from "../../../../../dummy-news";
 import { NewsArticle, NewsImage } from "./pageStyle";
 import Link from "next/link";
 
@@ -23,6 +23,7 @@ export default function NewsSlug({ params }: NewsSlugProps) {
               alt={newsItem.title}
               width={100}
               height={100}
+              priority
             />
           </Link>
           <h1>{newsItem.title}</h1>

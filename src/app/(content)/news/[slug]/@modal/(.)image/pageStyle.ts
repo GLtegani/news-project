@@ -9,9 +9,6 @@ export const ModalBackdrop = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const DialogModal = styled.dialog`
@@ -22,6 +19,7 @@ export const DialogModal = styled.dialog`
   box-shadow: 0 0 10px 0 #181817;
   max-width: 50rem;
   width: 100%;
+  margin: 0 auto;
 
   h1,
   h2 {

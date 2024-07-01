@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Merriweather } from "next/font/google";
-import StyledComponentsRegistry from "./lib/registry";
-import { GlobalStyle } from "./globals";
+import StyledComponentsRegistry from "../lib/registry";
+import { GlobalStyle } from "../globals";
 import MainHeader from "./components/MainHeader";
-import { PageContainer } from "./layoutStyle";
+import { PageContainer } from "../layoutStyle";
 
 const merriweather = Merriweather({ subsets: ["latin"], weight: "400" });
 

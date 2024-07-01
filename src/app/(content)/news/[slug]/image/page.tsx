@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { NewsSlugProps } from "../page";
 import { notFound } from "next/navigation";
-import { DUMMY_NEWS } from "../../../../../dummy-news";
+import { DUMMY_NEWS } from "../../../../../../dummy-news";
 import { FullscreenImage } from "../imagePageStyle";
 
 export default function ImagePage({ params }: NewsSlugProps) {
@@ -17,6 +17,7 @@ export default function ImagePage({ params }: NewsSlugProps) {
             alt={newsItem.title}
             width={800}
             height={800}
+            priority
           />
         </FullscreenImage>
       </>
